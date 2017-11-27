@@ -1,0 +1,312 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+@font-face {
+  font-family: 'San Francisco Regular';
+  src: url('fonts/sanfranciscoregular.otf');
+}
+@font-face {
+  font-family: 'San Francisco Black';
+  src: url("fonts/sanfranciscoblack.otf");
+}
+
+body {
+  background: #eee;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  height: 1000px;
+}
+
+.highlight {
+  background: #effb41;
+  padding: 2px;
+  color: #555;
+}
+
+.fab {
+  width: 60px;
+  height: 60px;
+  border-radius: 40px;
+  background: #FF007A;
+  position: fixed;
+  z-index: 10;
+  bottom: 16px;
+  right: 16px;
+  color: white;
+  overflow: hidden;
+  line-height: 60px;
+  font-size: 26px;
+}
+
+.fab::before {
+  font-family: 'FontAwesome';
+  font-weight: normal;
+  font-style: normal;
+  display: inline-block;
+  text-decoration: inherit;
+  width: 60px;
+  height: 60px;
+  text-align: center;
+  line-height: 32px;
+  content: '\f0ed';
+}
+
+.header {
+  max-width: 680px;
+  margin: 0 auto;
+  padding: 60px 40px;
+}
+
+h1 {
+  color: #555555;
+  font-family: "San Francisco Regular", Arial, Helvetica, Tahoma, Verdana, sans-serif;
+  font-size: 32px;
+  line-height: 44px;
+  font-weight: normal;
+  max-width: 400px;
+}
+
+.header .contacts {
+  margin-top: 40px;
+  height: 40px;
+  color: #555;
+  margin-left: -12px;
+}
+
+.header .contacts a {
+  color: #555;
+}
+
+.header .contacts li {
+  list-style: none;
+  display: inline-block;
+  width: 44px;
+  height: 32px;
+  font-size: 18px;
+  overflow: hidden;
+  margin-right: 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.4s;
+}
+
+.header .contacts li:hover {
+  transition: all 0.4s;
+  background: white;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  color: #FF007A;
+}
+
+.header .contacts li::before {
+  font-family: 'FontAwesome';
+  font-weight: normal;
+  font-style: normal;
+  display: inline-block;
+  text-decoration: inherit;
+  width: 44px;
+  text-align: center;
+  line-height: 32px;
+}
+
+.header .contacts .linkedin:before {
+  content: '\f0e1';
+}
+
+.header .contacts .email:before {
+  content: '\f0e0';
+}
+
+.header .contacts .twitter:before {
+  content: '\f099';
+}
+
+.header .contacts .skype:before {
+  content: '\f17e';
+}
+
+.header .contacts .xing:before {
+  content: '\f168';
+}
+
+.currently,
+.sideprojects {
+  background: white;
+  padding: 80px 40px;
+}
+
+.previously,
+.education {
+  background: #eee;
+  padding: 80px 40px;
+}
+
+.content {
+  max-width: 680px;
+  margin: 0 auto;
+}
+
+h2 {
+  font-family: "San Francisco Black", Arial, Helvetica, Tahoma, Verdana, sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  color: #555;
+  text-transform: uppercase;
+  font-weight: normal;
+  margin-bottom: 40px;
+}
+
+.item {
+  max-width: 680px;
+  border-radius: 4px;
+  overflow: hidden;
+  margin-bottom: 80px;
+}
+
+.item:last-child {
+  margin-bottom: 0;
+}
+
+.item a {
+  color: #555;
+  text-decoration: none;
+  border-bottom: 1px solid #555;
+}
+
+.item .logo {
+  width: 80px;
+  height: 80px;
+  float: left;
+  border-radius: 14px;
+  overflow: hidden;
+  margin-right: 40px;
+  margin-bottom: 16px;
+}
+
+.item .logo .white {
+  border: 1px solid #dddddd;
+}
+
+.item .logo img {
+  width: 80px;
+  height: 80px;
+}
+
+h3 {
+  font-family: "San Francisco Regular", Arial, Helvetica, Tahoma, Verdana, sans-serif;
+  font-size: 22px;
+  line-height: 32px;
+  color: #555;
+  font-weight: normal;
+  margin-bottom: 0;
+  width: 100%;
+  float: left;
+}
+
+.item .item-info {
+  font-family: "San Francisco Regular", Arial, Helvetica, Tahoma, Verdana, sans-serif;
+  width: auto;
+  font-size: 13px;
+  line-height: 24px;
+  color: #555;
+  font-weight: normal;
+  font-style: italic;
+  max-width: 555px;
+  margin-bottom: 16px;
+  float: left;
+}
+
+.item .item-description {
+  font-family: "San Francisco Regular", Arial, Helvetica, Tahoma, Verdana, sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  color: #555;
+  font-weight: normal;
+  max-width: 555px;
+  float: left;
+}
+
+.item .item-description p {
+  margin-bottom: 16px;
+}
+
+.item .item-description p:last-child {
+  margin-bottom: 0;
+}
+
+.gallery {
+  margin: 24px 0 0 0;
+  padding: 0;
+}
+
+.gallery li {
+  display: block;
+  max-width: 120px;
+  max-height: 80px;
+  margin-right: 16px;
+  margin-bottom: 16px;
+  border-radius: 4px;
+  background: black;
+  transition: all 0.4s;
+  overflow: hidden;
+  float: left;
+}
+
+.gallery li::before {
+  font-family: 'FontAwesome';
+  font-weight: normal;
+  font-style: normal;
+  text-decoration: inherit;
+  width: 120px;
+  text-align: center;
+  font-size: 40px;
+  line-height: 80px;
+  content: '\f00e';
+  position: absolute;
+  z-index: 20;
+  background: black;
+  opacity: 0;
+  transition: all 0.4s;
+  border-radius: 4px;
+}
+
+.gallery li:hover {
+  border-radius: 4px;
+  transition: all 0.4s;
+  cursor: pointer;
+}
+
+.gallery li:hover::before {
+  opacity: 0.5;
+  color: white;
+  transition: all 0.4s;
+}
+
+.gallery li img {
+  max-width: 120px;
+  min-height: 80px;
+  opacity: 0.8;
+}
+
+.gallery li img:hover {
+  opacity: 1;
+}
+
+@media screen and (min-width: 750px) {
+  .item {
+    margin-left: 120px;
+  }
+
+  .item .logo {
+    position: absolute;
+    margin-left: -120px;
+  }
+
+  .fab {
+    bottom: 40px;
+    right: 40px;
+  }
+}
