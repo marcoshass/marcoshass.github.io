@@ -132,6 +132,10 @@ h1 {
   content: '\f168';
 }
 
+.header .contacts .github:before {
+  content: '\f09b';
+}
+
 .currently,
 .sideprojects {
   background: white;
